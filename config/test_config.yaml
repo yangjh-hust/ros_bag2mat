@@ -1,0 +1,9 @@
+#namespace: [frl_uas7, uas2, ''] # list of namespaces to search
+topic_list: 
+#- [topic_name, message_type(as per dictionary), variable_name in mat file
+ - [/mavros/local_position/pose, geometry_msgs/PoseStamped, uav_pose]
+ - [/mavros/local_position/velocity_body, geometry_msgs/TwistStamped, uav_vel]
+ - [/debugPx4ctrl, quadrotor_msgs/Px4ctrlDebug, debugPx4ctrl]
+ - [/px4_pub_vb, geometry_msgs/TwistStamped, u_ref]
+ - [/px4_pub_u_nom, geometry_msgs/TwistStamped, u]
+#  - [/radar_height, geometry_msgs/PoseStamped, radar_data]
